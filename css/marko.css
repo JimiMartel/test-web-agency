@@ -1,0 +1,96 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family:  sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 3rem;
+}
+
+.u-center-text {text-align: center;}
+
+.u-margin-bottom-small {margin-bottom: 2rem;}
+.u-margin-bottom-medium {margin-bottom: 4rem;}
+.u-margin-bottom-big {margin-bottom: 8rem;}
+
+.header {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(220, 227, 91, .8),
+    rgba(69, 182, 73, .8)),
+    url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3e684a2ba58e985b993ccd3e26cb36d5&auto=format&fit=crop&w=1919&q=80);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.caption {
+  position: absolute;
+  width: 80%;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.caption .heading-main {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 2rem;
+  margin-bottom: 2rem;
+}
+
+.caption .heading-sub {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+}
+
+/*
+================================================
+                    O NAMA
+================================================
+*/
+
+.about__heading {
+  margin-top: 8rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+
+
+}
+
+.about__content--1 {
+  font-size: 1.6rem;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.about__content--1 img{
+  float: left;
+  margin-right: 3rem;
+}
+
+.about__content--2 {
+  font-size: 1.6rem;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.about__content--2 img{
+  float: right;
+  margin-left: 3rem;
+}
