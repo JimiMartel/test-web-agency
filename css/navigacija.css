@@ -1,0 +1,37 @@
+nav {
+  background: #333;
+}
+
+nav a {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+nav a:hover {
+  background-color: #000;
+}
+
+
+@media(min-width: 600px) {
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    border: none;
+    margin-right: 20px;
+  }
+}
+
+@media(min-width: 1000px) {
+  nav {
+    text-align: right;
+    padding-right: 10%;
+  }
+}
