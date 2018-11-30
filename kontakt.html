@@ -1,22 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/navigacija.css">
+  <link rel="stylesheet" href="css/nemanja.css">
 </head>
+
 <body>
 
   <header>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="o-nama.html">o-nama</a>
-          <a href="usluge.html">usluge</a>
-          <a href="kontakt.html">kontakt</a>
-       </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="o-nama.html">o-nama</a>
+      <a href="usluge.html">usluge</a>
+      <a href="kontakt.html">kontakt</a>
+    </nav>
   </header>
+  <form method="post">
+
+    <p>Kontaktirajte nas:</p>
+
+    <div>
+      <label for="ime">Username:</label>
+      <input id="ime" name="ime" minlength="5" placeholder="Ovde unesite ime" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Ovde unesite email" required>
+    </div>
+
+    <div>
+      <label for="poruka">Ostavite poruku</label>
+      <textarea name="poruka" id="poruka" placeholder="Unesite poruku ovde"></textarea>
+    </div>
+
+
+    <div class="flex-left">
+      <button>Posalji</button>
+    </div>
+  </form>
 
 </body>
+
 </html>
