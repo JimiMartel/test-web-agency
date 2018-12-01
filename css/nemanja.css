@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  background: #EEE;
 }
 
 form {
@@ -26,7 +27,7 @@ input, textarea, button {
   padding: 8px;
 }
 
-input, textarea, select {
+input, textarea {
   width: 80%;
 }
 
@@ -50,10 +51,36 @@ button:visited {
   color: #fff;
   font-weight: bold;
 }
-button:hover {
-
-}
 
 .flex-left {
   justify-content: left;
+}
+
+
+#wrapper {
+  width: 1200px;
+	border-top:1px solid #CCC;
+	padding:60px 0 120px;
+  margin: 0 auto;
+
+}
+
+
+.product {
+  overflow:hidden;
+	margin:40px 0;
+}
+.product img {
+
+	float:left;
+}
+.productInner {
+	padding-left:400px;
+
+}
+.productInner h2 {
+	margin-top:0px;
+}
+.productInner p, #uvodni_paragraf {
+  font-weight: normal;
 }
