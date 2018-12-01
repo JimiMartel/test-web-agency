@@ -1,5 +1,6 @@
 nav {
   background: #333;
+  padding: 1rem;
 }
 
 nav a {
@@ -29,8 +30,8 @@ nav a:hover {
 }
 
 footer {
-  height: 120px;
-  background-color: yellow;
+  height: 80px;
+  background-color: #333;
   text-align: center;
 }
 

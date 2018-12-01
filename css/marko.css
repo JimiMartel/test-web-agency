@@ -13,7 +13,13 @@ html {
 }
 
 body {
-  padding: 3rem;
+  padding: 0 3rem;
+}
+
+.empty-space {
+  text-align: center;
+  padding: 6rem;
+  height: 500px;
 }
 
 .u-center-text {text-align: center;}
@@ -145,38 +151,66 @@ body {
 } */
 
 .about-card {
-  padding: 2rem;
-  position: relative;
-  background-color: orangered;
+  padding: 3rem;
+  background-color: #eee;
   width: 60%;
-  margin: 0 auto;
+  height: 200px;
+  margin: 5rem auto;
+  transform: skewX(-12deg);
+  box-shadow: 0 1.5rem 6rem rgba(0,0,0, 0.2);
 }
 
 .about-card:hover .about-card__fig--img {
-  transform: scale(.9);
+  filter: blur(3px);
+}
+
+.about-card:hover .about-card__fig--caption {
+  transform: translate(-53%, -50%) translateY(-35px);
+  opacity: 1;
+}
+
+.about-card > * {
+  transform: skewX(12deg);
 }
 
 .about-card__fig {
+  width: 15rem;
+  height: 15rem;
   position: relative;
   float: left;
   shape-outside: circle(50%);
+  margin-right: 3rem;
 }
 
 .about-card__fig--img {
-
   width: 15rem;
   height: 15rem;
   background: url(https://images.unsplash.com/photo-1525879000488-bff3b1c387cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79c830c4f066fc500b70e97f39cab4a7&auto=format&fit=crop&w=500&q=60);
   border-radius: 50%;
-  background-size: 80%;
+  background-size: cover;
   background-position: center;
+  transition: all .3s;
 }
+
+
 
 .about-card__fig--caption {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-53%, -50%);
   color: white;
+  font-size: 1.6rem;
+  opacity: 0;
+  transition: all .3s;
+  text-align: center;
+}
+
+.about-card__text--heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about-card__text--text {
   font-size: 1.6rem;
 }
