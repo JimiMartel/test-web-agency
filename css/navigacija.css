@@ -10,12 +10,29 @@ nav a {
   padding: 6px;
   text-align: center;
   border-bottom: 1px solid white;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 nav a:hover {
   background-color: #000;
 }
+
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+footer {
+  height: 120px;
+  background-color: yellow;
+}
+
 
 
 @media(min-width: 600px) {
