@@ -60,8 +60,9 @@ button:visited {
 #wrapper {
   width: 1200px;
 	border-top:1px solid #CCC;
-	padding:60px 0 120px;
+	padding:60px 30px 120px 30px;
   margin: 0 auto;
+  background-image:linear-gradient(to right, rgba(39, 246, 91, 0.2), #FFE);
 
 }
 
@@ -83,4 +84,11 @@ button:visited {
 }
 .productInner p, #uvodni_paragraf {
   font-weight: normal;
+  text-align: justify;
+}
+.gmap_canvas {
+  display: block;
+  width: 1200px;
+  margin: 0 auto;
+
 }
