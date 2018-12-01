@@ -143,3 +143,40 @@ body {
   float: right;
   padding-left: 11rem;
 } */
+
+.about-card {
+  padding: 2rem;
+  position: relative;
+  background-color: orangered;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-card:hover .about-card__fig--img {
+  transform: scale(.9);
+}
+
+.about-card__fig {
+  position: relative;
+  float: left;
+  shape-outside: circle(50%);
+}
+
+.about-card__fig--img {
+
+  width: 15rem;
+  height: 15rem;
+  background: url(https://images.unsplash.com/photo-1525879000488-bff3b1c387cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79c830c4f066fc500b70e97f39cab4a7&auto=format&fit=crop&w=500&q=60);
+  border-radius: 50%;
+  background-size: 80%;
+  background-position: center;
+}
+
+.about-card__fig--caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.6rem;
+}
