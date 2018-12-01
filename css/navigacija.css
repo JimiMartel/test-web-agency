@@ -18,6 +18,23 @@ nav a:hover {
 }
 
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+footer {
+  height: 120px;
+  background-color: yellow;
+}
+
+
+
 @media(min-width: 600px) {
   nav {
     text-align: center;
